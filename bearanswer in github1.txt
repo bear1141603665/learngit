@@ -1,0 +1,22 @@
+you already have a local git 
+you want to upload to github
+
+however
+
+q1.ssh: Could not resolve hostname github.com: Name or service not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+how to solve?
+
+1.if you in the company
+  
+  git config http.proxy http://xxx.xxx.xxx.xxx:8080
+
+2. git remote rm origin
+  
+   git remote add origin https://github.com/xxxx/xxxx.git
+
+   git push -u origin master
